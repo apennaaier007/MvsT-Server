@@ -1,0 +1,69 @@
+---- Minecraft Crash Report ----
+// I just don't know what went wrong :(
+
+Time: 23-2-14 19:54
+Description: Exception in server tick loop
+
+java.lang.NoClassDefFoundError: reifnsk/minimap/ReiMinimap
+	at mod_ReiMinimap.getVersion(mod_ReiMinimap.java:15)
+	at cpw.mods.fml.common.modloader.ModLoaderModContainer.getVersion(ModLoaderModContainer.java:418)
+	at cpw.mods.fml.common.Loader.loadMods(Loader.java:515)
+	at cpw.mods.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:99)
+	at cpw.mods.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:350)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:92)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:634)
+	at net.minecraft.server.ThreadMinecraftServer.run(ThreadMinecraftServer.java:16)
+Caused by: java.lang.ClassNotFoundException: reifnsk.minimap.ReiMinimap
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:186)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 8 more
+Caused by: java.lang.NoClassDefFoundError: net/minecraft/client/resources/ResourceManagerReloadListener
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:178)
+	... 10 more
+Caused by: java.lang.ClassNotFoundException: net.minecraft.client.resources.ResourceManagerReloadListener
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:186)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 14 more
+Caused by: java.lang.RuntimeException: Attempted to load class bjq for invalid side SERVER
+	at cpw.mods.fml.common.asm.transformers.SideTransformer.transform(SideTransformer.java:51)
+	at net.minecraft.launchwrapper.LaunchClassLoader.runTransformers(LaunchClassLoader.java:274)
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:172)
+	... 16 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.6.4
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.7.0_21, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 4371474208 bytes (4168 MB) / 5145034752 bytes (4906 MB) up to 5145034752 bytes (4906 MB)
+	JVM Flags: 3 total; -Xms5G -Xmx5G -XX:PermSize=128m
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Suspicious classes: FML and Forge are installed
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	CraftBukkit Information: 
+   Running: 
+   Failed to handle CraftCrashReport:
+java.lang.NullPointerException
+	at org.bukkit.Bukkit.getName(Bukkit.java:72)
+	at org.bukkit.craftbukkit.v1_6_R3.CraftCrashReport.call(CraftCrashReport.java:19)
+	at net.minecraft.crash.CrashReportCategory.func_71500_a(CrashReportCategory.java:106)
+	at net.minecraft.crash.CrashReport.func_71504_g(CrashReport.java:58)
+	at net.minecraft.crash.CrashReport.<init>(CrashReport.java:40)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:693)
+	at net.minecraft.server.ThreadMinecraftServer.run(ThreadMinecraftServer.java:16)
+
+	FML: ~~ERROR~~ NoClassDefFoundError: reifnsk/minimap/ReiMinimap
+	TConstruct Environment: DO NOT REPORT THIS CRASH! Unsupported mods in environment: bukkit
+	Profiler Position: N/A (disabled)
+	Is Modded: Definitely; Server brand changed to 'mcpc,craftbukkit,fml,forge'
+	Type: Dedicated Server (map_server.txt)
