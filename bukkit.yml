@@ -50,3 +50,5 @@ world-settings:
     enabled: true
   promised:
     enabled: true
+  twilightforest:
+    enabled: true
