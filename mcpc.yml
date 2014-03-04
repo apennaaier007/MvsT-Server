@@ -76,21 +76,21 @@ world-settings:
     infinite-water-source: true
     flowing-lava-decay: false
     despawn-immediate: true
-    worldgen-FoodPlus-WorldGenerator: true
-    worldgen-Natura-BaseCropWorldgen: true
-    worldgen-TConstruct-SlimeIslandGen: true
-    worldgen-Natura-BaseCloudWorldgen: true
     worldgen-TConstruct-TBaseWorldGenerator: true
-    worldgen-633-FossilGenerator: true
+    worldgen-MineFactoryReloaded-MineFactoryReloadedWorldGen: true
+    worldgen-Thaumcraft-ThaumcraftWorldGenerator: true
     worldgen-633-WorldGenShipWreck: true
-    worldgen-633-WorldGenWeaponShopA: true
+    worldgen-TConstruct-SlimeIslandGen: true
+    worldgen-minechem-MinechemGeneration: true
     worldgen-witchery-WitcheryWorldGenerator: true
+    worldgen-CoFHWorld-WorldHandler: true
+    worldgen-633-FossilGenerator: true
+    worldgen-FoodPlus-WorldGenerator: true
+    worldgen-Natura-BaseCloudWorldgen: true
     worldgen-Natura-BaseTreeWorldgen: true
     worldgen-633-WorldGenAcademy: true
-    worldgen-CoFHWorld-WorldHandler: true
-    worldgen-MineFactoryReloaded-MineFactoryReloadedWorldGen: true
-    worldgen-minechem-MinechemGeneration: true
-    worldgen-Thaumcraft-ThaumcraftWorldGenerator: true
+    worldgen-633-WorldGenWeaponShopA: true
+    worldgen-Natura-BaseCropWorldgen: true
     worldgen-camping-WorldGen: true
 fake-players:
   do-login: false
@@ -185,3 +185,4 @@ world-environment-settings:
     keep-world-loaded: false
   twilightforest:
     keep-world-loaded: false
+    enabled: true
